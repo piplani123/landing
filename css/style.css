@@ -1,149 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    background-image: url("https://images.pexels.com/photos/7676662/pexels-photo-7676662.jpeg?auto=compress&cs=tinysrgb&w=800");
+    background-size: cover;
+    background-position: center;
 
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+}
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    cursor: pointer;
+}
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.ftco-section {
-  padding: 12em 0; }
-  .ftco-section h2 {
-    margin-bottom: 0; }
-
-footer {
-  padding: 7em 0; }
-
-.footer-10 {
-  background: #222222;
-  padding: 0 0 4em 0; }
-  .footer-10 .border-top, .footer-10 .border-bottom {
-    border-color: rgba(255, 255, 255, 0.1) !important; }
-  .footer-10 .footer-heading {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 30px; }
-  .footer-10 p {
-    color: rgba(255, 255, 255, 0.3); }
-  .footer-10 a {
-    color: #1089ff; }
-  .footer-10 .con.con-1 {
-    background: #1e1e1e; }
-  .footer-10 .con.con-2 {
-    background: #1c1c1c; }
-  .footer-10 .con.con-3 {
-    background: #252525; }
-  .footer-10 .list-unstyled li a {
-    color: rgba(255, 255, 255, 0.2); }
-    .footer-10 .list-unstyled li a:hover {
-      color: #fff; }
-  .footer-10 .con-info .icon {
-    width: 50px;
-    height: 50px;
-    background: #1089ff;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-    .footer-10 .con-info .icon span {
-      color: #fff;
-      font-size: 24px; }
-  .footer-10 .con-info span {
-    color: rgba(255, 255, 255, 0.8); }
-  .footer-10 .subscribe-form .form-group {
-    position: relative;
-    margin-bottom: 0;
-    border-radius: 0; }
-    .footer-10 .subscribe-form .form-group input {
-      background: white !important;
-      border: none !important;
-      outline: none !important;
-      color: rgba(0, 0, 0, 0.3) !important;
-      font-size: 16px;
-      border-radius: 0; }
-      .footer-10 .subscribe-form .form-group input::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: rgba(0, 0, 0, 0.3) !important; }
-      .footer-10 .subscribe-form .form-group input::-moz-placeholder {
-        /* Firefox 19+ */
-        color: rgba(0, 0, 0, 0.3) !important; }
-      .footer-10 .subscribe-form .form-group input:-ms-input-placeholder {
-        /* IE 10+ */
-        color: rgba(0, 0, 0, 0.3) !important; }
-      .footer-10 .subscribe-form .form-group input:-moz-placeholder {
-        /* Firefox 18- */
-        color: rgba(0, 0, 0, 0.3) !important; }
-      .footer-10 .subscribe-form .form-group input:focus {
-        outline: none !important;
-        -webkit-box-shadow: none;
-        box-shadow: none; }
-    .footer-10 .subscribe-form .form-group .submit {
-      color: #fff !important;
-      display: block;
-      width: 130px;
-      height: 52px;
-      font-size: 16px;
-      background: #1089ff !important;
-      border: none;
-      border-radius: 0; }
-      .footer-10 .subscribe-form .form-group .submit:hover, .footer-10 .subscribe-form .form-group .submit:focus {
-        text-decoration: none !important;
-        outline: none !important; }
-  .footer-10 .subscribe-form .subheading {
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: bisque;
+    text-decoration: none;
+    
+}
+header{
+    background-color: #002423;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+header:hover{
+    box-shadow: 2px 2px 25px black;
+    transition: 0.5s;
+}
+.navlinks li{
     display: inline-block;
-    margin-top: 5px;
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 13px; }
-  .footer-10 .ftco-footer-social li a {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff; }
+    margin: 30px;
+    align-items: center;
+}
+.navlinks li a:hover{
+    color: tomato;
+   
+}
 
-    .ftco-footer-social li {
-      list-style: none;
-      margin: 0 10px 0 0;
-      display: inline-block; }
-      .ftco-footer-social li a {
-        height: 40px;
-        width: 40px;
-        display: block;
-        background: rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
-        position: relative; }
-        .ftco-footer-social li a span {
-          position: absolute;
-          font-size: 20px;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-        .ftco-footer-social li a:hover {
-          color: #fff; }
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: firebrick;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s, ease 0s;
+    border: none;
+    z-index: 999;
+}
+button:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+ 
+    display: none;
+    justify-content: flex-start;
+    list-style: none;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+.sidebar li{
+    width: 100%;
+    margin: 25px;
+    text-shadow: 1px 1px 2px black;
+    
+}
+.sidebar img{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 120px;
+}
+nav ion-icon{
+    font-size: 2em;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+h2{ 
+    color: wheat;
+    text-shadow: #002423 -2px 2px 10px;
+    font-size: 2em;
+    margin: 20%;
+    text-align: center;
+}
+@media only screen and (min-width: 830px){
+    .navlinks ion-icon{
+        display: none;
+        
+    }
+}
+@media only screen and (max-width: 830px){
+    .navlinks .items{
+        display: none;
+    }
+}
